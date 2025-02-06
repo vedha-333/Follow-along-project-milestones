@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import {LoginPage,SignupPage,Home,CreateProduct,MyProducts} from "./Routes";
 import "./App.css";
@@ -12,6 +12,7 @@ const App = () => {
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/create-product" element={<CreateProduct />} />
       <Route path="/my-products" element={<MyProducts/>} />
+      <Route path="/create-product/:id" element={<CreateProduct />} />
     </Routes>
     </BrowserRouter>
     

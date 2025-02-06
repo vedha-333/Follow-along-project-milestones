@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import axios from "axios";
 
@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submit behavior
     try {
-      // Make the POST request to the backend (replace with your actual API endpoint)
+      
       const response = await axios.post("http://localhost:8000/api/v2/user/login", { email, password });
       
       // Assuming response contains a token or user data on successful login
