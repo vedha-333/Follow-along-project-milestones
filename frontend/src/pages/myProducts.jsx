@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Myproduct from "../components/auth/myProducts"; // <-- Import the Product component
+import Myproduct from "../components/auth/myProducts"; 
 import Nav from "../components/auth/nav";
 
 
@@ -7,7 +7,7 @@ export default function MyProducts() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const email = "saideep@gmail.com";
+    const email = "saideep@example.com";
 
     useEffect(() => {
         fetch(`http://localhost:8000/api/v2/product/my-products?email=${email}`)

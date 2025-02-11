@@ -85,7 +85,7 @@ const handleSubmit = async (e) => {
                 );
                 if (response.status === 200) {
                     alert("Product updated successfully!");
-                    navigate("/my-products",{ replace: true });
+                    navigate("/my-products");
                 }
             } else {
                 const response = await axios.post(
