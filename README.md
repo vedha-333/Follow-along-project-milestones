@@ -553,3 +553,43 @@ By the end of this milestone, you will:
 - Store and retrieve selected delivery addresses.
 - Calculate and send the total cart value to the frontend.
 - Handle order placement logic.
+
+
+## **Milestone 25: Place Order Endpoint**
+## Features Implemented
+- Order Placement Endpoint:
+  Created an endpoint to receive the products, user, and address details.
+- Retrieve User ID:
+  Retrieved the user ID using the email of the user.
+- Store Order Details:
+  For each product, created a separate order with the same address and stored the order details in the MongoDB order collection using the order schema.
+- Understanding Order Placement:
+  This lesson helps in understanding how to create an endpoint that places an order in the database.
+
+## **Milestone 26: Retrieve User Orders**
+## Features Implemented
+- Retrieve Orders Endpoint:
+  Created an endpoint to receive the user's email.
+- Retrieve User ID:
+  Retrieved the user ID using the email of the user.
+- Fetch User Orders:
+  Using the user ID, fetched all the orders of that user from the database.
+- Send Orders in Response:
+  Sent all the user's orders in the response.
+- Understanding Order Retrieval:
+  This lesson helps in understanding how to create an endpoint that retrieves and sends user orders.
+
+## **Milestone 27: My Orders Page**
+## Features Implemented
+- My Orders Page:
+  Created a new "My Orders" page.
+- Fetch User Orders:
+  Sent a GET request to the "my-orders" endpoint created in the previous milestone.
+- Send User Email:
+  Sent the user's email to the endpoint to get all the user's orders.
+- Display User Orders:
+  Displayed all the user's orders on the "My Orders" page.
+- Add to Navbar:
+  Added the "My Orders" page to the navbar for better navigation.
+- Understanding My Orders Page:
+  This lesson helps in understanding how to create a page to display user orders and integrate it into the navigation.
